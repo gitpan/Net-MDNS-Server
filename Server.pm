@@ -30,7 +30,7 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -59,7 +59,7 @@ sub service
 	{
 		my ( $hostname, $ip, $service, $port, $proto) = @_;
 		my $rev_ip = join('.', reverse(split(/\./, $ip)));
-		add_service($hostname, $rev_ip, $service, $port, $proto);
+		add_service($hostname, $rev_ip, $port, $service, $proto);
 	}
 sub claim_hostname
 	{

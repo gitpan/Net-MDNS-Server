@@ -4,8 +4,8 @@
 
 #include "ppport.h"
 
-#include <../../../../mdns-wrapper/mdnsd.h>
-#include <../../../../mdns-wrapper/mdns_server.h>
+#include <./mdns/mdnsd.h>
+#include <./mdns/mdns_server.h>
 
 #include "const-c.inc"
 
