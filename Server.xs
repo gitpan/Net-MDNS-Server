@@ -4,10 +4,13 @@
 
 #include "ppport.h"
 
-#include <./mdns/mdnsd.h>
-#include <./mdns/mdns_server.h>
+
+#include "./mdns/mdnsd.h"
+#include "./mdns/mdns_server.h"
 
 #include "const-c.inc"
+
+
 
 MODULE = Net::MDNS::Server		PACKAGE = Net::MDNS::Server		PREFIX = mdnss_
 
